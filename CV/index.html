@@ -1,0 +1,731 @@
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+        <link type="text/css" rel="stylesheet" href="./style/index.css"  media="screen,projection"/>
+
+        <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </head>
+
+    <body>
+        <!--Navigation bar-->
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a class="brand-logo center">Adolfo Lemus</a>
+                    <ul id="nav-mobile" class="right">
+                        <li><a onclick=changeLanguage()><i class="material-icons">translate</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--Floating action button-->
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large waves-effect waves-light modal-trigger" href="#modal-info">
+                <i class="material-icons">account_circle</i>
+            </a>
+        </div>
+
+        <!--Contact information modal-->
+        <div id="modal-info" class="modal bottom-sheet">
+            <div class="modal-content center">
+                <h4 class="spanish"><b>Informacion de contacto</b></h4>
+                <h4 class="english hide"><b>Contact information</b></h4>
+                <div class="flow-text">
+                    <a href="tel:4433490226" class="contact-container">
+                        <img src="./images/contact-info/phone.png" alt="" class="contact-image">
+                        <span class="contact-text">44 33 49 02 26</span>
+                    </a>
+                    <a href="mailto:adolfolemag@gmail.com" class="contact-container">
+                        <img src="./images/contact-info/mail.png" alt="" class="contact-image">
+                        <span class="contact-text">adolfolemag@gmail.com</span>
+                    </a>
+                    <a href="http://www.linkedin.com/in/adolfo-lemus" target="_blank" class="contact-container">
+                        <img src="./images/contact-info/linkedin.png" alt="" class="contact-image">
+                        <span class="contact-text">linkedin.com/in/adolfo-lemus</span>
+                    </a>
+                    <a href="http://www.github.com/AdolfoLem"target="_blank" class="contact-container">
+                        <img src="./images/contact-info/github.png" alt="" class="contact-image">
+                        <span class="contact-text">github.com/AdolfoLem</span>
+                    </a>
+                    <p class="contact-container">
+                        <img src="./images/contact-info/location.png" alt="" class="contact-image">
+                        <span class="contact-text">Morelia, Michoacán</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Content of the page-->
+        <div class="container">
+            <!--photo and main information-->
+            <div class="row">
+                <div class="col s12 center">
+                    <img src="./images/me.jpg" alt="foto" class="circle photo">
+                    <h4 class="name">José Adolfo Lemus Magaña</h4>
+                    <h5 class="spanish"><i>Estudiante de Ingeniería en Sistemas Computacionales</i></h5>
+                    <h5 class="english hide"><i>Computer Systems Engineering Student</i></h5>
+                    <h5 class="spanish"><i>Especialidad: Ingeniería de Software</i></h5>
+                    <h5 class="english hide"><i>Special field: software engineering</i></h5>
+                </div>
+                <div class="col s12 l4 offset-l2 center">
+                    <a class="waves-effect waves-light btn button modal-trigger" href="#modal-info">
+                        <i class="material-icons right">send</i>
+                        <span class="spanish">Contáctame</span>
+                        <span class="english hide">Contact me</span>
+                    </a>
+                </div>
+                <div class="col s12 l4 center">
+                    <a class="spanish waves-effect waves-light btn button" href="./downloads/" download="">
+                        <i class="material-icons right">file_download</i>
+                        <span>Descarga mi CV</span>
+                    </a>
+                    <a class="english hide waves-effect waves-light btn button" href="./downloads/" download="">
+                        <i class="material-icons right">file_download</i>
+                        <span>Download my CV</span>
+                    </a>
+                </div>
+            </div>
+            <div class="divider"></div>
+
+            <!--about me-->
+            <h4 class="spanish"><b>Sobre mi</b></h4>
+            <h4 class="english hide"><b>About me</b></h4>
+            <div class="flow-text">
+                <span class="spanish">Siempre estoy dispuesto a aprender cosas nuevas para mejorar en lo que me apasiona, apto para trabajar en equipo y con buenas habilidades sociales</span>
+                <span class="english hide">Always disposed to learn new stuff to improve my self in what I'm passionate about, suitable for teamwork and good social skills</span>
+                <br><br>
+                <span class="spanish">Poseo doble nacionalidad, soy mexicano y canadiense</span>
+                <span class="english hide">I have dual citizenship, I'm Mexican and Canadian</span>
+                <br><br>
+            </div>
+            <div class="divider"></div>
+
+            <!--skills-->
+            <h4 class="spanish"><b>Habilidades</b></h4>
+            <h4 class="english hide"><b>Skills</b></h4>
+            <h5 class="spanish section-title"><i>Idiomas</i></h5>
+            <h5 class="english hide section-title"><i>Languages</i></h5>
+            <div class="flow-text">
+                <div class="row">
+                    <div class="col s4 m3 l2 center">
+                        <div>
+                            <img src="./images/skills/languages/spanish.png" alt="flag" class="circle flag">
+                        </div>
+                        <div class="spanish">
+                            Español
+                            <h6><i>Nativo</i></h6>
+                        </div>
+                        <div class="english hide">
+                            Spanish
+                            <h6><i>Native</i></h6>
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center">
+                        <div>
+                            <img src="./images/skills/languages/english.png" alt="flag" class="circle flag">
+                        </div>
+                        <div class="spanish">
+                            Inglés
+                            <h6><i>C1</i></h6>
+                        </div>
+                        <div class="english hide">
+                            English
+                            <h6><i>C1</i></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="spanish section-title"><i>Tecnologías de desarrollo</i></h5>
+            <h5 class="english hide section-title"><i>Development technologies</i></h5>
+            <div class="flow-text">
+                <div class="row">
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/dev-tech/react.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            React
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/dev-tech/nodejs.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            NodeJs
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/dev-tech/materialui.svg" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            MaterialUI
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/dev-tech/laravel.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            Laravel
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/dev-tech/materialize.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            Materialize
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/dev-tech/uikit.svg" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            UiKit
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 offset-l1 center tech-container">
+                        <div>
+                            <img src="./images/skills/dev-tech/bootstrap.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            Bootstrap
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/dev-tech/jquery.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            JQuery
+                        </div>
+                    </div>
+                    <div class="col s4 m4 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/dev-tech/mysql.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            MySQL
+                        </div>
+                    </div>
+                    <div class="col s4 m4 l2 offset-s2 center tech-container">
+                        <div>
+                            <img src="./images/skills/dev-tech/figma.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            Figma
+                        </div>
+                    </div>
+                    <div class="col s4 m4 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/dev-tech/git.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            Git
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="spanish section-title"><i>Lenguajes de programación</i></h5>
+            <h5 class="english hide section-title"><i>Programming languages</i></h5>
+            <div class="flow-text">
+                <div class="row">
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/code-lang/javascript.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            Javascript
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/code-lang/java.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            Java
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/code-lang/c++.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            C++
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/code-lang/csharp.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            C#
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/code-lang/python.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            Python
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/code-lang/html.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            HTML 5
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 offset-s2 offset-l4 center tech-container">
+                        <div>
+                            <img src="./images/skills/code-lang/css.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            CSS 3
+                        </div>
+                    </div>
+                    <div class="col s4 m3 l2 center tech-container">
+                        <div>
+                            <img src="./images/skills/code-lang/php.png" alt="icon" class="tech">
+                        </div>
+                        <div>
+                            PHP
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="spanish section-title"><i>Otras competencias</i></h5>
+            <h5 class="english hide section-title"><i>Other skills</i></h5>
+            <div class="flow-text">
+                <span class="spanish">Uso de metodologías ágiles para desarrollo de Software (SCRUM), modelado y administración de bases de datos relacionales, paquetería básica de Microsoft Office, redacción de documentos escritos y expresión oral</span>
+                <span class="english hide">Usage of  agile methodologies for software development (SCRUM), relational database modeling and administration, main Microsoft Office aplications, writing of written documents and oral expression</span>
+                <br><br>
+            </div>
+            <div class="divider"></div>
+
+            <!--professional experience-->
+                <h4><b>Experiencia profesional</b></h4>
+                <h4 class="subtitle">IINII Inversiones Inmobilidarias</h4>
+                <div class="row">
+                    <!--iinii-->
+                    <div class="col s12 l6">
+                        <div class="card horizontal">
+                            <div class="card-image valign-wrapper">
+                                <img src="./images/iinii/iinii.jpeg" alt="image">
+                            </div>
+                            <div class="spanish">
+                                <div class="card-content">
+                                    <span class="card-title">???</span>
+                                    <div class="my-badge">Septiembre 2021 - Hoy</div>
+                                    <p>Actualmente me encuentro trabajando en proyecto secreto (más información el 7 de Diciembre)</p>
+                                </div>
+                                <div class="card-action">
+                                    <a class="modal-trigger">Próximamente...</a>
+                                </div>
+                            </div>
+                            <div class="english hide">
+                                <div class="card-content">
+                                    <span class="card-title">???</span>
+                                    <div class="my-badge">September 2021 - Today</div>
+                                    <p>At the moment I'm working in a top secret project (more information on December 7)</p>
+                                </div>
+                                <div class="card-action">
+                                    <a class="modal-trigger">Coming soon...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="spanish subtitle">Fabrica Academica de Software</h4>
+                <h4 class="english hide subtitle">Fabrica Academica de Software</h4>
+                <div class="col s12 flow-text">
+                    <span class="spanish">La Fábrica Académica de Software es un departamento del Instituto Tecnológico de Morelia que le da la oportunidad a los estudiantes de la especialidad de Ingeniería de Software de trabajar con empresas reales y competir entre si para desarrollar soluciones que puedan implementarse en un ambiente real</span>
+                    <span class="english hide">The Fábrica Académica de Software it's a department of the Instituto Tecnológico de Morelia that gives to the students of the specialty in Software Engineering the oportunity to colaborate with real company's and compete with each other to develop software solutions that can be implemented in a real environment</span>
+                    <br><br>
+                </div>
+                <div class="row">
+                    <!--escuela sindical-->
+                    <div class="col s12 l6">
+                        <div class="card horizontal">
+                            <div class="card-image valign-wrapper">
+                                <img src="./images/sindical/logo.png" alt="image">
+                            </div>
+                            <div class="spanish">
+                                <div class="card-content">
+                                    <span class="card-title">Escuela Sindical </span>
+                                    <div class="my-badge">Enero - Diciembre 2021</div>
+                                    <p>Plataforma web para la creación y administración de cursos virtuales para el Sindato del IMSS Sección XX</p>
+                                </div>
+                                <div class="card-action">
+                                    <a class="modal-trigger" href="#modal-sindical1">Más detalles</a>
+                                </div>
+                            </div>
+                            <div class="english hide">
+                                <div class="card-content">
+                                    <span class="card-title">Escuela Sindical </span>
+                                    <div class="my-badge">January - December 2021</div>
+                                    <p>Web platform for the creation and management of virtual courses for the IMSS Labor Union Section XX</p>
+                                </div>
+                                <div class="card-action">
+                                    <a class="modal-trigger" href="#modal-sindical1">More details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--sistema gestor sindical-->
+                    <div class="col s12 l6">
+                        <div class="card horizontal">
+                            <div class="card-image valign-wrapper">
+                                <img src="./images/sindical/logo.png">
+                            </div>
+                            <div class="spanish">
+                                <div class="card-content">
+                                    <span class="card-title">Sistema Gestor Sindical</span>
+                                    <div class="my-badge">Agosto - Diciembre 2021</div>
+                                    <div>Plataforma web para la administración de empleados y oficinas del Sindicato del IMSS Sección XX from Morelia</div>
+                                </div>
+                                <div class="card-action">
+                                    <a class="modal-trigger" href="#modal-sidical2">Más detalles</a>
+                                </div>
+                            </div>
+                            <div class="english hide">
+                                <div class="card-content">
+                                    <span class="card-title">Sistema Gestor Sindical</span>
+                                    <div class="my-badge">August - December 2021</div>
+                                    <div>Web platform for the administration of employees and offices of the IMSS Labor Union Section XX from Morelia</div>
+                                </div>
+                                <div class="card-action">
+                                    <a class="modal-trigger" href="#modal-sidical2">More details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--consultarq-->
+                    <div class="col s12 l6">
+                        <div class="card horizontal">
+                            <div class="card-image valign-wrapper">
+                                <img src="./images/consultarq/logo.png">
+                            </div>
+                            <div class="spanish">
+                                <div class="card-content">
+                                    <span class="card-title">ConsultarQ</span>
+                                    <div class="my-badge">Agosto - Diciembre 2020</div>
+                                    <p>Plataforma web para control de empleados, gastos, clientes, proveedores y administración de proyectos</p>
+                                </div>
+                                <div class="card-action">
+                                    <a class="modal-trigger" href="#modal-consultarq">Más detalles</a>
+                                </div>
+                            </div>
+                            <div class="english hide">
+                                <div class="card-content">
+                                    <span class="card-title">ConsultarQ</span>
+                                    <div class="my-badge">August - December 2020</div>
+                                    <p>Web platform for the control of employees, expenses, clients, providers and management of projects</p>
+                                </div>
+                                <div class="card-action">
+                                    <a class="modal-trigger" href="#modal-consultarq">More details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tepetate-->
+                    <div class="col s12 l6">
+                        <div class="card horizontal">
+                            <div class="card-image valign-wrapper">
+                                <img src="./images/tepetate/logo.png">
+                            </div>
+                            <div class="spanish">
+                                <div class="card-content">
+                                    <span class="card-title">El Tepetate</span>
+                                    <div class="my-badge">Enero - Junio 2020</div>
+                                    <p>Plataforma web para la administración de empleados, estanques, truchas, compras, ventas e inventario</p>
+                                </div>
+                                <div class="card-action">
+                                    <a class="modal-trigger" href="#modal-tepetate">Más detalles</a>
+                                </div>
+                            </div>
+                            <div class="english hide">
+                                <div class="card-content">
+                                    <span class="card-title">El Tepetate</span>
+                                    <div class="my-badge">January - June 2020</div>
+                                    <p>Web platform for the management of employees, ponds, trouts, purchases, expenses and inventory</p>
+                                </div>
+                                <div class="card-action">
+                                    <a class="modal-trigger" href="#modal-tepetate">More details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="divider"></div>
+
+            <!--academic record-->
+            <h4 class="spanish"><b>Historial academico</b></h4>
+            <h4 class="english hide"><b>Academic backgrounds</b></h4>
+            <div class="row">
+                <!--itm-->
+                <div class="col s12 l10 offset-l1">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper itm-image">
+                            <img src="./images/itm/Itmorelia.png" alt="image">
+                        </div>
+                        <div class="spanish">
+                            <div class="card-content">
+                                <span class="card-title">Instituto Tecnológico de Morelia (2017 - Hoy)</span>
+                                <p class="itm-text"><i class="material-icons">chevron_right</i>Especialidad en Ingeniería de Software</p>
+                                <p class="itm-text"><i class="material-icons">chevron_right</i>Reconocimiento a mejor promedio de quinto semestre (Agosto - Diciembre 2019)</p>
+                                <p class="itm-text"><i class="material-icons">chevron_right</i>Ganador de 3 proyectos FAS (El Tepetate, ConsultarQ y Escuela Sindical)</p>
+                            </div>
+                        </div>
+                        <div class="english hide">
+                            <div class="card-content">
+                                <span class="card-title">Instituto Tecnológico de Morelia (2017 - Hoy)</span>
+                                <p class="itm-text"><i class="material-icons">chevron_right</i>Specialty in Software Engineering</p>
+                                <p class="itm-text"><i class="material-icons">chevron_right</i>Award to best grade average of fifth semester (August - December 2019)</p>
+                                <p class="itm-text"><i class="material-icons">chevron_right</i>Winner of 3 FAS projects (El Tepetate, ConsultarQ and Escuela Sindical)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+
+            <!--interests and hobbies   -->
+            <h4 class="spanish"><b>Intereses y pasatiempos</b></h4>
+            <h4 class="english hide"><b>Interests and hobbies</b></h4>
+            <div class="flow-text">
+                <span class="spanish">Fanático del diseño, así como del desarrollo de proyectos de software y tecnologías web para desarrollar aplicaciones. También me gusta el crossfit, los rompecabezas, el ajedrez, escuchar música, los videojuegos y disfrutar de tiempo de calidad con mis amigos y seres queridos</span>
+                <span class="english hide">Design fanatic, as well as the development of software projects and web technologies to develop aplications. Also I like the crossfit, puzzles, chess, listen to music, play videogames and enjoy quality time with my friends and loved ones</span>
+                <br><br>
+            </div>
+
+        </div>
+
+        <!--modals of professional experience-->
+        <!--escuela sindical-->
+        <div id="modal-sindical1" class="modal bottom-sheet">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12 l4">
+                        <h4>Escuela Sindical</h4>
+                        <div class="my-badge-container">
+                            <span class="spanish my-badge">Plataforma:</span>
+                            <span class="english hide my-badge">Platform:</span>
+                            Web
+                        </div>
+                        <div class="my-badge-container">
+                            <span class="spanish my-badge">Herramientas:</span>
+                            <span class="english hide my-badge">Tools:</span>
+                            Laravel / React / Materialize / MaterialUI / JQuery / JavaScript / MySQL/Inertia.js
+                        </div>
+                        <p class="spanish">
+                            Plataforma web creada desde cero y a medida para el Sindicato de Trabajadores del IMSS Sección XX Morelia para la creación, administración y seguimiento de cursos virtuales, así como del alumnado y profesorado de la institución.
+                            <br><br>
+                            El desarrollo de este proyecto se realizó bajo la metodología ágil SCRUM, en el cual desempeñe el rol de Scrum Master y programdor.
+                        </p>
+                        <p class="english hide">
+                            Web platform from scratch and made to measure for the IMSS Labor Union Section XX from Morelia for the creation, management and follow-up of virtual courses, as well ass the student body and faculty of the institution.
+                            <br><br>
+                            The development of this project has been made under the agile methodology SCRUM, in which I'd played the role of Scrum Master and developer.
+                        </p>
+                    </div>
+                    <div class="col s12 l8">
+                        <div class="row center">
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/sindical/escuela_1.png">
+                            </div>
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/sindical/escuela_2.png">
+                            </div>
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/sindical/escuela_3.png">
+                            </div>
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/sindical/escuela_4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--sistema gestor sindical-->
+        <div id="modal-sidical2" class="modal bottom-sheet">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12 l4">
+                        <h4>Sistema Gestor Sindical</h4>
+                        <div class="my-badge-container">
+                            <span class="spanish my-badge">Plataforma:</span>
+                            <span class="english hide my-badge">Platform:</span>
+                            Web
+                        </div>
+                        <div class="my-badge-container">
+                            <span class="spanish my-badge">Herramientas:</span>
+                            <span class="english hide my-badge">Tools:</span>
+                            Laravel / React / Materialize / JQuery / JavaScript / MySQL / Inertia.js
+                        </div>
+                        <p class="spanish">
+                            Plataforma web creada desde cero y a medida para el Sindicato de Trabajadores del IMSS Sección XX Morelia para la administración de las distintas oficinas que componen el sindicato.
+                            <br><br>
+                            El desarrollo de este proyecto se realizó bajo la metodología ágil SCRUM, en el cual desempeñe el rol de analista, diseñador y programdor.
+                        </p>
+                        <p class="english hide">
+                            Web platform from scratch and made to measure for the IMSS Labor Union Section XX from Morelia for the management of the different offices that make up the Labor Union.
+                            <br><br>
+                            The development of this project has been made under the agile methodology SCRUM, in which I'd played the role of analyst, designer and developer.
+                        </p>
+                    </div>
+                    <div class="col s12 l8">
+                        <div class="row center">
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/sindical/gestor_1.png">
+                            </div>
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/sindical/gestor_2.png">
+                            </div>
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/sindical/gestor_3.png">
+                            </div>
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/sindical/gestor_4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--consultarq-->
+        <div id="modal-consultarq" class="modal bottom-sheet">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12 l4">
+                        <h4>ConsultarQ</h4>
+                        <div class="my-badge-container">
+                            <span class="spanish my-badge">Plataforma:</span>
+                            <span class="english hide my-badge">Platform:</span>
+                            Web
+                        </div>
+                        <div class="my-badge-container">
+                            <span class="spanish my-badge">Herramientas:</span>
+                            <span class="english hide my-badge">Tools:</span>
+                            Express.js / UIKit / MySQL / JQuery / JavaScript
+                        </div>
+                        <p class="spanish">
+                            Plataforma web creada desde cero y a medida para la consultoria de arquitectos ConsultarQ para el seguimiento de proyectos de la empresa.
+                            <br><br>
+                            El desarrollo de este proyecto se realizó bajo la metodología ágil SCRUM, en el cual desempeñe el rol de analista, diseñador y programdor.
+                        </p>
+                        <p class="english hide">
+                            Web platform from scratch and made to measure for the architectural consultancy ConsultarQ for the follow-up of the projects of the company.
+                            <br><br>
+                            The development of this project has been made under the agile methodology SCRUM, in which I'd played the role of analyst, designer and developer.
+                        </p>
+                    </div>
+                    <div class="col s12 l8">
+                        <div class="row center">
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/consultarq/consultarq_1.png">
+                            </div>
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/consultarq/consultarq_2.png">
+                            </div>
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/consultarq/consultarq_3.png">
+                            </div>
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/consultarq/consultarq_4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--tepetate-->
+        <div id="modal-tepetate" class="modal bottom-sheet">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col s12 l4">
+                        <h4>El Tepetate</h4>
+                        <div class="my-badge-container">
+                            <span class="spanish my-badge">Plataforma:</span>
+                            <span class="english hide my-badge">Platform:</span>
+                            Web
+                        </div>
+                        <div class="my-badge-container">
+                            <span class="spanish my-badge">Herramientas:</span>
+                            <span class="english hide my-badge">Tools:</span>
+                            Laravel / Materialize / MariaDB / JQuery / Javascript
+                        </div>
+                        <p class="spanish">
+                            Plataforma web creada desde cero y a medida para la granja trutícola El Tepetate para la administración de los distintos recursos de la empresa.
+                            <br><br>
+                            El desarrollo de este proyecto se realizó bajo la metodología ágil SCRUM, en el cual desempeñe el rol de analista, diseñador y programdor.
+                        </p>
+                        <p class="english hide">
+                            Web platform from scratch and made to measure for the trout farm El Tepetate for the management of the resources of the company.
+                            <br><br>
+                            The development of this project has been made under the agile methodology SCRUM, in which I'd played the role of analyst, designer and developer.
+                        </p>
+                    </div>
+                    <div class="col s12 l8">
+                        <div class="row center">
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/tepetate/tepetate_1.png">
+                            </div>
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/tepetate/tepetate_2.png">
+                            </div>
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/tepetate/tepetate_3.png">
+                            </div>
+                            <div class="col s12 m6">
+                                <img class="materialboxed small-image" src="./images/tepetate/tepetate_4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.modal').modal();
+                $('.materialboxed').materialbox();
+                $('.slider').slider();
+            });
+
+            function changeLanguage(){
+                if($(".spanish").hasClass("hide")){
+                    $(".spanish").removeClass("hide");
+                    $(".english").addClass("hide");
+                    M.toast({html: 'Español'})
+                }
+                else{
+                    $(".spanish").addClass("hide");
+                    $(".english").removeClass("hide");
+                    M.toast({html: 'English'})
+                }
+            }
+        </script>
+    </body>
+</html>
