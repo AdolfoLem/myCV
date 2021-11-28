@@ -20,7 +20,7 @@
                 <div class="nav-wrapper">
                     <a class="brand-logo center" style="width:75%;">Adolfo Lemus</a>
                     <ul id="nav-mobile" class="right">
-                        <li><a onclick=changeLanguage()><i class="material-icons">translate</i></a></li>
+                        <li><a id="btn_language" onclick=changeLanguage()><i class="material-icons">translate</i></a></li>
                     </ul>
                 </div>
             </nav>
@@ -539,12 +539,12 @@
                         <p class="spanish">
                             Plataforma web creada desde cero y a medida para el Sindicato de Trabajadores del IMSS Sección XX Morelia para la creación, administración y seguimiento de cursos virtuales, así como del alumnado y profesorado de la institución.
                             <br><br>
-                            El desarrollo de este proyecto se realizó bajo la metodología ágil SCRUM, en el cual desempeñe el rol de Scrum Master y programdor.
+                            El desarrollo de este proyecto se realizó bajo la <i>metodología ágil SCRUM</i>, en el cual desempeñe el rol de <b>Scrum Master</b> y <b>programador</b>. Además trabaje en el diseño y maquetado de las interfaces del sistema.
                         </p>
                         <p class="english hide">
                             Web platform from scratch and made to measure for the IMSS Labor Union Section XX from Morelia for the creation, management and follow-up of virtual courses, as well ass the student body and faculty of the institution.
                             <br><br>
-                            The development of this project has been made under the agile methodology SCRUM, in which I'd played the role of Scrum Master and developer.
+                            The development of this project has been made under the <i>agile methodology SCRUM</i>, in which I'd played the role of <b>Scrum Master</b> and <b>developer</b>. Also I worked on the design and layout of the user interfaces.
                         </p>
                     </div>
                     <div class="col s12 l8">
@@ -585,12 +585,12 @@
                         <p class="spanish">
                             Plataforma web creada desde cero y a medida para el Sindicato de Trabajadores del IMSS Sección XX Morelia para la administración de las distintas oficinas que componen el sindicato.
                             <br><br>
-                            El desarrollo de este proyecto se realizó bajo la metodología ágil SCRUM, en el cual desempeñe el rol de analista, diseñador y programdor.
+                            El desarrollo de este proyecto se realizó bajo la <i>metodología ágil SCRUM</i>, en el cual desempeñe el rol de <b>analista</b>, <b>diseñador</b> y <b>programador</b>.
                         </p>
                         <p class="english hide">
                             Web platform from scratch and made to measure for the IMSS Labor Union Section XX from Morelia for the management of the different offices that make up the Labor Union.
                             <br><br>
-                            The development of this project has been made under the agile methodology SCRUM, in which I'd played the role of analyst, designer and developer.
+                            The development of this project has been made under the <i>agile methodology SCRUM</i>, in which I'd played the role of <b>analyst</b>, <b>designer</b> and <b>developer</b>.
                         </p>
                     </div>
                     <div class="col s12 l8">
@@ -631,12 +631,12 @@
                         <p class="spanish">
                             Plataforma web creada desde cero y a medida para la consultoria de arquitectos ConsultarQ para el seguimiento de proyectos de la empresa.
                             <br><br>
-                            El desarrollo de este proyecto se realizó bajo la metodología ágil SCRUM, en el cual desempeñe el rol de analista, diseñador y programdor.
+                            El desarrollo de este proyecto se realizó bajo la <i>metodología ágil SCRUM</i>, en el cual desempeñe el rol de <b>analista</b>, <b>diseñador</b> y <b>programador</b>.
                         </p>
                         <p class="english hide">
                             Web platform from scratch and made to measure for the architectural consultancy ConsultarQ for the follow-up of the projects of the company.
                             <br><br>
-                            The development of this project has been made under the agile methodology SCRUM, in which I'd played the role of analyst, designer and developer.
+                            The development of this project has been made under the <i>agile methodology SCRUM</i>, in which I'd played the role of <b>analyst</b>, <b>designer</b> and <b>developer</b>.
                         </p>
                     </div>
                     <div class="col s12 l8">
@@ -677,12 +677,12 @@
                         <p class="spanish">
                             Plataforma web creada desde cero y a medida para la granja trutícola El Tepetate para la administración de los distintos recursos de la empresa.
                             <br><br>
-                            El desarrollo de este proyecto se realizó bajo la metodología ágil SCRUM, en el cual desempeñe el rol de analista, diseñador y programdor.
+                            El desarrollo de este proyecto se realizó bajo la <i>metodología ágil SCRUM</i>, en el cual desempeñe el rol de <b>analista</b>, <b>diseñador</b> y <b>programador</b>.
                         </p>
                         <p class="english hide">
                             Web platform from scratch and made to measure for the trout farm El Tepetate for the management of the resources of the company.
                             <br><br>
-                            The development of this project has been made under the agile methodology SCRUM, in which I'd played the role of analyst, designer and developer.
+                            The development of this project has been made under the <i>agile methodology SCRUM</i>, in which I'd played the role of <b>analyst</b>, <b>designer</b> and <b>developer</b>.
                         </p>
                     </div>
                     <div class="col s12 l8">
@@ -713,6 +713,8 @@
                 $('.modal').modal();
                 $('.materialboxed').materialbox();
                 $('.slider').slider();
+
+                $("#btn_language").trigger("click");
             });
 
             function changeLanguage(){
