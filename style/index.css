@@ -40,6 +40,7 @@ div.toast {
 
 .card-image {
     width: 80%;
+    padding: 10px;
 }
 
 .card-action a {
@@ -180,6 +181,15 @@ div.toast {
 
 .my-badge-container {
     margin-bottom: 5px;
+}
+
+.my-badge-container a {
+    color: var(--color3);
+    font-weight: 500;
+}
+
+.my-badge-container i {
+    font-size: small;
 }
 
 .small-image {
